@@ -1,0 +1,15 @@
+name: Email Step Demo
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 24f2004755@ds.study.iitm.ac.in  # YOUR EMAIL HERE
+        run: echo "Step with email in name"
+
+      - name: Another step
+        run: echo "This is a normal step"
